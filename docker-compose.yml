@@ -1,0 +1,14 @@
+tomcat7:
+    image:
+        myidet/tomcat:7
+    ports:
+        - "8080:8080"
+    hostname:
+        tomcat7
+    volumes:
+        - ./conf:/usr/local/tomcat/conf
+    privileged:
+        true
+    external_links:
+        - oracle-xe-11g
+        - oracle-xe-11g:db11g
