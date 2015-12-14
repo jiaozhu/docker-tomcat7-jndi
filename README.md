@@ -1,14 +1,14 @@
 # docker-tomcat7-use-jndi
 
-### 下载
+## 下载
 
     ```
     git clone https://github.com/jiaozhu/docker-tomcat7-jndi.git
     ```
 
-### 使用
+## 使用
 
-- 构建容器依赖于 [docker-oracle-xe-11g](https://github.com/wnameless/docker-oracle-xe-11g)
+1. 构建容器依赖于 [docker-oracle-xe-11g](https://github.com/wnameless/docker-oracle-xe-11g)
 
     ```
     docker run -d -p 49160:22 -p 49161:1521 --name oracle-xe-11g wnameless/oracle-xe-11g
@@ -31,9 +31,9 @@
     10.6.6.100
     ```
 
-- 进入 `conf` 目录，根据环境修改tomcat所需要的配置文件，如 `server.xml`、`context.xml`、`tomcat-users.xml`等
+2. 进入 `conf` 目录，根据环境修改tomcat所需要的配置文件，如 `server.xml`、`context.xml`、`tomcat-users.xml`等
 
-- 使用docker-compose
+3. 使用docker-compose
 
     ```
     cd ..
